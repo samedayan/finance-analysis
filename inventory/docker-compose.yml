@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  db:
+    image: postgres
+    container_name: 'finance_risk_analysis_postgres'
+    ports:
+      - "5432:5432" 
+    environment:
+      - POSTGRES_PASSWORD=Aa123456
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: 'finance_risk_analysis_rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      DEFAULT_USER: rabbitmq
+      DEFAULT_PASS: rabbitmq
+      DEFAULT_VHOST: /

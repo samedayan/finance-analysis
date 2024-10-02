@@ -1,0 +1,57 @@
+create database finance;
+
+create table if not exists public.agreement
+(
+    id              uuid    default uuid_generate_v4() not null primary key,
+    name            varchar(100)                       not null,
+    partner_id    uuid                    not null,
+    status          integer default 0                  not null,
+    create_date     timestamp                          not null,
+    update_date     timestamp,
+    create_user_id  integer                            not null,
+    update_user_id integer
+);
+
+create table if not exists public.partner
+(
+    id              uuid    default uuid_generate_v4() not null primary key,
+    name            varchar(100)                       not null,
+    contact_email varchar(100) not null,
+    contact_phone varchar(50) not null,
+    status          integer default 0                  not null,
+    create_date     timestamp                          not null,
+    update_date     timestamp,
+    create_user_id  integer                            not null,
+    update_user_id integer
+);
+
+
+create table if not exists public.risk_analysis
+(
+    id              uuid    default uuid_generate_v4() not null primary key,
+    work_item_id    uuid                    not null,
+    create_date     timestamp                          not null,
+    update_date     timestamp,
+    create_user_id  integer                            not null,
+    update_user_id integer
+);
+
+
+create table if not exists public.work_item
+(
+    id              uuid    default uuid_generate_v4() not null primary key,
+    name    varchar(100)                    not null,
+    agreement_id    uuid                    not null,
+    status          integer default 0                  not null,
+    create_date     timestamp                          not null,
+    update_date     timestamp,
+    create_user_id  integer                            not null,
+    update_user_id integer
+);
+
+
+
+
+
+
+

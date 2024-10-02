@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{93DC5228-2F86-476A-B33A-D53523216301}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{26AA4091-27C1-40BB-A785-D1F6AAA2E76F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FAE4FBBF-E9CF-4069-9B78-7FB01B6C1D1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0D7F77D8-80B1-4DB3-A15E-F7856889D4F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{71683CA4-7EF2-41E1-BFDE-CF502E7AB83C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence.PostgresSql", "Persistence.PostgresSql", "{37D92340-B700-41EA-AD28-C15CE71E764B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Persistence.PostgresSql", "src\Persistence.PostgresSql\Finance.Analysis.Persistence.PostgresSql\Finance.Analysis.Persistence.PostgresSql.csproj", "{68C4750E-EA94-4E0B-B42D-255CCEFD3B65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Infrastructure", "src\Infrastructure\Finance.Analysis.Infrastructure\Finance.Analysis.Infrastructure.csproj", "{9C1FF872-9665-41CF-8BD6-71BBD4E31E98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Domain", "src\Domain\Finance.Analysis.Domain\Finance.Analysis.Domain.csproj", "{BB769283-61FA-4E05-91A1-A4C94AC0CFD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Contracts", "src\Contracts\Finance.Analysis.Contracts\Finance.Analysis.Contracts.csproj", "{537DDE1E-3CB4-4147-A676-592AED0DE283}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Application", "src\Application\Finance.Analysis.Application\Finance.Analysis.Application.csproj", "{99EE6E25-4628-44EF-B7A7-D768F4E94230}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Analysis.Api", "src\Api\Finance.Analysis.Api\Finance.Analysis.Api.csproj", "{41274E68-A996-4FF7-96E1-FAC0D02EA664}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68C4750E-EA94-4E0B-B42D-255CCEFD3B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C4750E-EA94-4E0B-B42D-255CCEFD3B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C4750E-EA94-4E0B-B42D-255CCEFD3B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C4750E-EA94-4E0B-B42D-255CCEFD3B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1FF872-9665-41CF-8BD6-71BBD4E31E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1FF872-9665-41CF-8BD6-71BBD4E31E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1FF872-9665-41CF-8BD6-71BBD4E31E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1FF872-9665-41CF-8BD6-71BBD4E31E98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB769283-61FA-4E05-91A1-A4C94AC0CFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB769283-61FA-4E05-91A1-A4C94AC0CFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB769283-61FA-4E05-91A1-A4C94AC0CFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB769283-61FA-4E05-91A1-A4C94AC0CFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537DDE1E-3CB4-4147-A676-592AED0DE283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537DDE1E-3CB4-4147-A676-592AED0DE283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537DDE1E-3CB4-4147-A676-592AED0DE283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537DDE1E-3CB4-4147-A676-592AED0DE283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EE6E25-4628-44EF-B7A7-D768F4E94230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EE6E25-4628-44EF-B7A7-D768F4E94230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EE6E25-4628-44EF-B7A7-D768F4E94230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EE6E25-4628-44EF-B7A7-D768F4E94230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41274E68-A996-4FF7-96E1-FAC0D02EA664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41274E68-A996-4FF7-96E1-FAC0D02EA664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41274E68-A996-4FF7-96E1-FAC0D02EA664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41274E68-A996-4FF7-96E1-FAC0D02EA664}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68C4750E-EA94-4E0B-B42D-255CCEFD3B65} = {37D92340-B700-41EA-AD28-C15CE71E764B}
+		{9C1FF872-9665-41CF-8BD6-71BBD4E31E98} = {FAE4FBBF-E9CF-4069-9B78-7FB01B6C1D1F}
+		{BB769283-61FA-4E05-91A1-A4C94AC0CFD3} = {0D7F77D8-80B1-4DB3-A15E-F7856889D4F3}
+		{537DDE1E-3CB4-4147-A676-592AED0DE283} = {71683CA4-7EF2-41E1-BFDE-CF502E7AB83C}
+		{99EE6E25-4628-44EF-B7A7-D768F4E94230} = {26AA4091-27C1-40BB-A785-D1F6AAA2E76F}
+		{41274E68-A996-4FF7-96E1-FAC0D02EA664} = {93DC5228-2F86-476A-B33A-D53523216301}
+	EndGlobalSection
+EndGlobal
